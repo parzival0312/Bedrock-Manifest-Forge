@@ -1,0 +1,22 @@
+{
+  "name": "Bedrock Manifest Forge",
+  "short_name": "Manifest Forge",
+  "description": "A local Minecraft Bedrock manifest generator.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#101310",
+  "theme_color": "#101310",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
