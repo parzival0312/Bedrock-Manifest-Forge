@@ -1,4 +1,4 @@
-const CACHE_NAME = "bedrock-manifest-forge-v2";
+const CACHE_NAME = "bedrock-manifest-forge-v3";
 const APP_FILES = [
   "./",
   "./index.html",
