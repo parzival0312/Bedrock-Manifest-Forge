@@ -1,7 +1,8 @@
-const CACHE_NAME = "bedrock-manifest-forge-v3";
+const CACHE_NAME = "bedrock-manifest-forge-v4";
 const APP_FILES = [
   "./",
   "./index.html",
+  "./responsive.css",
   "./manifest.webmanifest",
   "./icon-192.png",
   "./icon-512.png"

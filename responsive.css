@@ -1,0 +1,78 @@
+html,
+body {
+  min-height: 100%;
+}
+
+html body {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+}
+
+html body .wrap {
+  width: 100%;
+  margin: auto;
+  padding:
+    max(20px, env(safe-area-inset-top))
+    max(18px, env(safe-area-inset-right))
+    max(32px, env(safe-area-inset-bottom))
+    max(18px, env(safe-area-inset-left));
+}
+
+@media (max-width: 800px) {
+  body .layout {
+    grid-template-columns: minmax(0, 1fr);
+    min-width: 0;
+  }
+
+  body .layout > *,
+  body .panel {
+    min-width: 0;
+  }
+
+  html body .wrap {
+    padding:
+      max(20px, env(safe-area-inset-top))
+      max(12px, env(safe-area-inset-right))
+      max(32px, env(safe-area-inset-bottom))
+      max(12px, env(safe-area-inset-left));
+  }
+}
+
+@media (max-width: 560px) {
+  body .module-fields {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body .row:not(.version-row) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body .section-title-row {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  body .actions .btn {
+    min-width: min(100%, 130px);
+  }
+}
+
+@media (max-width: 360px) {
+  html body .wrap {
+    padding-right: max(8px, env(safe-area-inset-right));
+    padding-left: max(8px, env(safe-area-inset-left));
+  }
+
+  body .panel {
+    padding: 12px;
+  }
+
+  body .uuidrow {
+    gap: 5px;
+  }
+
+  body .uuidrow button {
+    padding-inline: 8px;
+  }
+}
